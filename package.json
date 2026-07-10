@@ -1,41 +1,32 @@
 {
-  "name": "@jr-cologne/create-gulp-starter-kit",
-  "version": "0.11.0-beta",
-  "description": "A simple Gulp 4 Starter Kit for modern web development.",
+  "name": "personal-website-gulp-scaffold",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A legacy Gulp 4 personal website scaffold for Nischhal Raj Subba, currently based on a starter-kit structure with HTML/Pug, Sass/SCSS/Less/Stylus, Babel, BrowserSync, image optimization, and dist build output, intended to be evolved into a real personal portfolio or landing page.",
   "keywords": [
+    "personal-website",
+    "portfolio",
+    "landing-page",
     "gulp",
-    "gulp-starter-kit",
+    "gulp-4",
     "sass",
     "scss",
-    "less",
-    "stylus",
     "pug",
     "babel",
     "browser-sync",
-    "autoprefixer",
-    "modern-web-dev",
-    "imagemin",
-    "sourcemaps",
-    "webpack-stream",
-    "es6-modules"
+    "static-site"
   ],
   "scripts": {
     "start": "gulp",
-    "build": "gulp build"
+    "dev": "gulp",
+    "build": "gulp build",
+    "check": "npm run build"
   },
-  "bin": {
-    "create-gulp-starter-kit": "./bin/install.js"
+  "author": "Nischhal Raj Subba",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=10"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jr-cologne/gulp-starter-kit.git"
-  },
-  "author": "JR Cologne",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jr-cologne/gulp-starter-kit/issues"
-  },
-  "homepage": "https://github.com/jr-cologne/gulp-starter-kit",
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
@@ -60,8 +51,5 @@
   "dependencies": {
     "axios": "^0.21.1",
     "fs-extra": "^9.0.1"
-  },
-  "engines": {
-    "node": ">=10"
   }
 }
